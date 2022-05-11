@@ -19,7 +19,8 @@ function BigBoard({currentPlayer, next}) {
       nextActiveSet[j] = -1;
       newBVals[j] = currentPlayer;
       setBoardValues(newBVals);
-    }    
+    }
+        
     //if activeBoard[i] = -1 open all boards except ones with -1
     if(nextActiveSet[i] === -1){
       nextActiveSet = nextActiveSet.map((v) => (v === -1)? -1 : 1);
@@ -27,6 +28,7 @@ function BigBoard({currentPlayer, next}) {
       nextActiveSet = nextActiveSet.map((v, ind) => (v===-1)? -1: (ind === i)? 1 : 0);
     }
     setActiveBoards(nextActiveSet);
+    
     //check big board winner
     let winner = calculateBoardWinner(newBVals);
     if(winner) {
