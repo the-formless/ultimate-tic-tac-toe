@@ -14,7 +14,7 @@ function BigBoard({currentPlayer, next}) {
     let nextActiveSet = activeBoards.slice();
     let newBVals = boardValues.slice(); 
     console.log(i, j);
-    if(j){
+    if(j !== undefined){
       //closed board catched. stored in j
       nextActiveSet[j] = -1;
       newBVals[j] = currentPlayer;
@@ -29,7 +29,14 @@ function BigBoard({currentPlayer, next}) {
     setActiveBoards(nextActiveSet);
     //check big board winner
     let winner = calculateBoardWinner(newBVals);
-    (winner)? next(winner) : next();
+    if(winner) {
+      nextActiveSet = nextActiveSet.fill(-1);
+      setActiveBoards(nextActiveSet);
+      next(winner);
+    }
+    else{
+      next();
+    }
   }
 
   return (
