@@ -14,3 +14,7 @@
   grid-template-rows: repeat(3, auto);
 }
 
+.bigBoard {
+  grid-gap: 3px;
+}
+
