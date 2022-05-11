@@ -24,7 +24,7 @@ function switchPlayer(gameOver) {
   return (
     <div className="game">
       <BigBoard currentPlayer={currentPlayer} next={switchPlayer}/>
-      <p className="winnerName">{winner && `The winner of the game is ${winner}`}</p>
+      <p className="gameOverText">{winner && `The winner of the game is ${winner}`}</p>
     </div>
   );
 }

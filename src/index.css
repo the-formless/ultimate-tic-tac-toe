@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
 .square {
+  font-size: 22px;
   border: 1px solid rgb(87, 58, 22);
   margin: 3%;
   width: 33px;
@@ -7,6 +10,7 @@
 }
 
 #root{
+  font-family: "Comfortaa", monospace;
   display: grid;
 }
 .board {
@@ -22,7 +26,7 @@
 }
 
 .boardBlocked{
-  background-color:rgb(139, 117, 87);
+  background-color:rgba(156, 132, 99, 0.788);
 }
 .game {
   display: grid;
@@ -32,15 +36,25 @@
   border-radius: 3%;
   padding: 1%;
   justify-self: center;
+  box-shadow: 2px 2px 22px 2px #7C410A;
 }
 
 .winnerName {
+  font-size: 77px;
+  font-weight: 369;
   position: absolute;
   align-self: center;
   justify-self: center;
   color: white;
 }
 
+.gameOverText {
+  position: relative;
+  font-size: 22px;
+  align-self: center;
+  justify-self: center;
+  color: rgb(192, 93, 12);
+}
 .bigBoard {
   grid-gap: 1%px;
   border-radius: 2%;
