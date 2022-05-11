@@ -2,6 +2,7 @@
 
 .square {
   font-size: 22px;
+  color: #853313;
   border: 1px solid rgb(87, 58, 22);
   margin: 3%;
   width: 33px;
@@ -37,6 +38,7 @@
   padding: 1%;
   justify-self: center;
   box-shadow: 2px 2px 22px 2px #7C410A;
+  margin-top: 10%;
 }
 
 .winnerName {
