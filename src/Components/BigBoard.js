@@ -6,6 +6,7 @@ function BigBoard({currentPlayer, next}) {
   // store 0 for unplayable board, 1 for playable board, -1 for closed board
   const [activeBoards, setActiveBoards] = useState([1, 1, 1, 1, 1, 1, 1, 1 , 1]);
 
+  //state for storing the winners
   const valPrototype = Array(9).fill(null);
   const [boardValues, setBoardValues] = useState(valPrototype);
 

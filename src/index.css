@@ -1,8 +1,8 @@
 .square {
   border: 1px solid black;
-  background-color:burlywood;
   width: 33px;
   height: 33px;
+  background-color: transparent;
 }
 
 .board {
@@ -12,6 +12,18 @@
   height: fit-content;
   grid-template-columns: repeat(3, auto);
   grid-template-rows: repeat(3, auto);
+  background-color:burlywood;
+}
+
+.boardBlocked{
+  background-color:rgb(139, 117, 87);
+}
+
+.winnerName {
+  position: absolute;
+  align-self: center;
+  justify-self: center;
+  color: white;
 }
 
 .bigBoard {

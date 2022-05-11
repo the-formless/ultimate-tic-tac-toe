@@ -17,7 +17,7 @@ function switchPlayer(gameOver) {
     else
       setPlayer(players[0]);
   }
-  console.log(currentPlayer);
+  //console.log(currentPlayer);
 }
   return (
     <BigBoard currentPlayer={currentPlayer} next={switchPlayer}/>
