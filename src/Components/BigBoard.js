@@ -2,7 +2,7 @@ import Board from './Board'
 import { useState } from 'react';
 import { calculateBoardWinner } from '../Dependencies/CalculateBoardWinner';
 
-function BigBoard({currentPlayer, next}) {
+function BigBoard({currentPlayer, next, startGame}) {
   // store 0 for unplayable board, 1 for playable board, -1 for closed board
   const [activeBoards, setActiveBoards] = useState([1, 1, 1, 1, 1, 1, 1, 1 , 1]);
 
@@ -44,7 +44,7 @@ function BigBoard({currentPlayer, next}) {
   return (
     <div className='board bigBoard'>
       {
-        activeBoards.map((v, i) => <Board key={i} boardNum={i} active={v} currentPlayer={currentPlayer} playNextBoard={nextBoard}/>)
+        activeBoards.map((v, i) => <Board key={i} boardNum={i} active={v} currentPlayer={currentPlayer} playNextBoard={nextBoard} startGame={startGame}/>)
       }
     </div>
   )

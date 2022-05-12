@@ -2,8 +2,12 @@ import Game from "./Components/Game";
 
 function App() {
 
+
   return (
-    <Game />
+    <div className="flex-col justify-self-center mt-5">
+      <Game />
+    </div>
+    
   );
 }
 

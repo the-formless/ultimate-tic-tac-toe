@@ -1,9 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
-
+body {  
+  background: linear-gradient(45deg, rgba(42,17,60,1) 0%, rgba(236,199,218,1) 50%, rgba(181,203,231,1) 100%);
+}
 .square {
   font-size: 22px;
-  color: #853313;
-  border: 1px solid rgb(87, 58, 22);
+  color: #fdc883;
+  border: 1px solid rgb(100, 74, 41);
   margin: 3%;
   width: 33px;
   height: 33px;
@@ -23,11 +28,11 @@
   height: auto;
   grid-template-columns: repeat(3, auto);
   grid-template-rows: repeat(3, auto);
-  background-color:burlywood;
+  background-color:rgb(161, 134, 99);
 }
 
 .boardBlocked{
-  background-color:rgba(156, 132, 99, 0.788);
+  background-color:rgba(75, 63, 48, 0.788);
 }
 .game {
   display: grid;
@@ -61,5 +66,18 @@
   grid-gap: 1%px;
   border-radius: 2%;
   padding: 0.25%;
+}
+
+.character-select {
+  display: grid;
+  width: fit-content;
+  height: fit-content;
+  align-self: center;
+  grid-template-columns: repeat(6, auto);
+  padding: 3%;
+  border: 2px solid rgb(102, 60, 6);
+  border-radius: 3%;
+  box-shadow: 0px 0px 7px 7px rgba(0,0,0,0.33);
+  background-color: #917a67;
 }
 
