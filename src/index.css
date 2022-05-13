@@ -3,7 +3,7 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 body {  
-
+  background-color: #f8e8d3;
 }
 .square {
   font-size: 22px;
