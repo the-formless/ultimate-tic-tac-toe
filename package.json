@@ -2,7 +2,7 @@
   "name": "ultimate-tic-tac-toe",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://the-formless.github.io/",
+  "homepage": "https://the-formless.github.io/ultimate-tic-tac-toe/",
   "dependencies": {
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
