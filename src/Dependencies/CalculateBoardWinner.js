@@ -1,3 +1,4 @@
+//all possible wins in a traditional tic tac toe game
 function calculateBoardWinner(squares) {
   const lines = [
     [0, 1, 2],

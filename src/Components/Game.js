@@ -25,6 +25,7 @@ const reloadGame = async () => {
 window.onbeforeunload = reloadGame;
 
 function selectCharacter(ch) {
+  //if initial selection, store first choice in 0, second in 1
   if(players[0] == null){
     setPlayers([ch, null]);
     setCurrentPlayer(ch);
@@ -47,9 +48,9 @@ function switchPlayer(gameOver) {
     else
       setCurrentPlayer(players[0]);
   }
-  //console.log(currentPlayer);
 }
 
+//if player clicks on board without selecting characters
 function startGamePrompt(){
   if(players[0] == null)
     setPrompt("Please select Player 1 character to continue");
